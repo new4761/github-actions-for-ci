@@ -33,6 +33,7 @@ jobs:
       run: |
         npm install
         npm run build
+        needs: build
     - uses: actions/upload-artifact@main
       with:
         name: webpack artifacts
